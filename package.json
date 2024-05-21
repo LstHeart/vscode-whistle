@@ -54,11 +54,19 @@
 		],
 		"commands": [
 			{
+				"command": "whistle.pages.webview",
+				"title": "Whistle 调试",
+				"icon": {
+					"light": "assets/light/run.svg",
+					"dark": "assets/dark/run.svg"
+				}
+			},
+			{
 				"command": "whistle.npmScripts.refresh",
 				"title": "刷新",
 				"icon": {
-				  "light": "assets/light/refresh.svg",
-				  "dark": "assets/dark/refresh.svg"
+					"light": "assets/light/refresh.svg",
+					"dark": "assets/dark/refresh.svg"
 				}
 			},
 			{
@@ -68,7 +76,8 @@
 					"light": "assets/light/run.svg",
 					"dark": "assets/dark/run.svg"
 				}
-			},			{
+			},
+			{
 				"command": "whistle.npmScripts.setProxyPort",
 				"title": "设置",
 				"icon": {
@@ -87,16 +96,16 @@
 		],
 		"menus": {
 			"view/title": [
-			  {
-				"command": "whistle.npmScripts.refresh",
-				"when": "view == whistleScripts",
-				"group": "navigation"
-			  },
-			  {
-				"command": "whistle.npmScripts.setProxyPort",
-				"when": "view == whistleScripts",
-				"group": "navigation"
-			  }
+				{
+					"command": "whistle.npmScripts.refresh",
+					"when": "view == whistleScripts",
+					"group": "navigation"
+				},
+				{
+					"command": "whistle.npmScripts.setProxyPort",
+					"when": "view == whistleScripts",
+					"group": "navigation"
+				}
 			],
 			"view/item/context": [
 				{
@@ -114,11 +123,11 @@
 		"configuration": {
 			"title": "Whistle",
 			"properties": {
-			  "whistle.proxyPort": {
-				"type": "string",
-				"default": "8899",
-				"description": "whistle 监听端口"
-			  }
+				"whistle.proxyPort": {
+					"type": "string",
+					"default": "8899",
+					"description": "whistle 监听端口"
+				}
 			}
 		}
 	},
